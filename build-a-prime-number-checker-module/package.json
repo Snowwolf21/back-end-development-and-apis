@@ -1,0 +1,18 @@
+{
+  "name": "build-a-prime-number-checker-module",
+  "version": "1.0.0",
+  "description": "This is a package that is used to check a prime number is true or false",
+  "keywords": [
+    "prime",
+    "number",
+    "true",
+    "false"
+  ],
+  "license": "MIT",
+  "author": "Snowwolf",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.test.js"
+  }
+}
