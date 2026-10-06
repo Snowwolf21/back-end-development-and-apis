@@ -1,0 +1,24 @@
+{
+  "name": "build-a-personal-profile-app",
+  "version": "1.0.0",
+  "description": "This is use to create a personal profile app",
+  "keywords": [
+    "Get",
+    "Skill",
+    "Personal",
+    "Porfolio"
+  ],
+  "license": "MIT",
+  "author": "snowwolf",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "server.test.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

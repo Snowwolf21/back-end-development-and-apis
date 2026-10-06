@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import users from "../data/users.json" with { type: "json" };
+import jwt from "jsonwebtoken";
 
 const WATCHLISTS_PATH = path.join(
   import.meta.dirname,
@@ -93,4 +94,14 @@ export function deleteMovie(userId, movieId) {
   writeWatchlists(watchlists);
 
   return true;
+}
+
+export function generateToken(user) {
+  const payload = {
+    id: user.id,
+    username: user.username,
+    role: user.role,
+  };
+
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
 }
